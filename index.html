@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- own css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- axios cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+       <div class="container">
+
+            <div class="header d-flex">
+                <h1 class="logo">devfinder</h1>
+                <div class="switcher-box">
+                    switcher
+                </div>
+            </div>
+
+            <div class="search-div d-flex">
+                <img src="./assets/images/icon-search.svg" alt="search icon">
+                <input type="text" placeholder="Search GitHub username…" id="search-inp" class="search">
+                <span class="error-el">No Result</span>
+                <button id="search-btn" class="btn">Search</button>
+            </div>
+
+            <div class="result">
+
+                <div class="res-header d-flex">
+                    <div class="img-div">
+                        <img src="" alt="" class="avatar">
+                    </div>
+                    <div class="reg-info d-flex">
+                        <!-- name and link -->
+                        <div class="name-link d-flex">
+                            <span id="name" class="user-name">name</span>
+                            <a href="#" id="link" class="user-link">@link</a>
+                        </div>
+
+                        <span class="date">date</span>
+                    </div>
+                </div>
+
+                <div class="res-body">
+                    <p class="about-user" id="bio">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+                    </p>
+                </div>
+                
+                <div class="activity d-flex">
+                    <label class="d-flex">
+                        <span class="activity-name">Repos</span>
+                        <span class="activity-num" id="repo-num">8</span>
+                    </label>
+                    <label class="d-flex">
+                        <span class="activity-name">Followers</span>
+                        <span class="activity-num" id="followers-num">8</span>
+                    </label>
+                    <label class="d-flex">
+                        <span class="activity-name">Following</span>
+                        <span class="activity-num" id="following-num">8</span>
+                    </label>
+                </div>
+
+                <div class="contact d-flex">
+                    <ul class="d-flex">
+                        <li class="item">
+                            <img src="./assets/images/icon-location.svg" alt="">
+                            <span class=" contact-item" id="location">San Francisco</span>
+                        </li>
+                        <li class="item">
+                            <img src="./assets/images/icon-twitter.svg" alt="">
+                            <span class="twitter contact-activity" id="twitter">Not avalible</span>
+                        </li>
+                        <li>
+                            <img src="./assets/images/icon-website.svg" alt="">
+                            <a href="#" class=" contact-item" id="website">url</a>
+                        </li>
+                      
+                        <li class="item">
+                            <img src="./assets/images/icon-company.svg" alt="">
+                            <span class="company contact-activity" id="company">@github</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+<script src="./app.js"></script>    
+</body>
+</html>
